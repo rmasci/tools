@@ -52,6 +52,7 @@ func ErrorHandleOut(err error, message string, exit bool) {
 	ErrorHandle(err, message, os.Stdout, exit)
 }
 
+//
 // Error handle HTTP Send 500 response.
 func ErrorHandle500(err error, message string, w http.ResponseWriter) {
 	if err != nil {
